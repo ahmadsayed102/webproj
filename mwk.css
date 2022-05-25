@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+.search{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.menu {
+    width: 30%;
+  }
+  .t{
+      width: 30%;
+  }
+  .sticky{
+    width: 100%;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: goldenrod;
+    margin: auto;
+    z-index: 1;
+    height: 24px;
+    text-transform: uppercase;
+  }
+  .sticky p{
+    text-align: center;
+  }
+
+  .menu a {
+    background-color: black;
+    color: goldenrod;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    background-color: goldenrod;
+    color: black;
+  }
+  #search{
+      color: goldenrod;
+  }
+#all,#all2,#all3{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery,.gallery2,.gallery3 {
+    margin: 5px;
+    border: 2px solid white;
+    width: 30%;
+    border-radius: 3px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+    
+  }
+  h2{
+    margin-top: 1%;
+    padding-left: 1%;
+}
+  div.gallery:hover,div.gallery2:hover,div.gallery3:hover {
+    border: 2px solid goldenrod;
+  }
+  
+  div.gallery img,div.gallery2 img,div.gallery3 img {
+    width: 100%;
+    height: 300px;
+  }
+  
+  div.disc {
+    padding: 15px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 18px;
+  }
+  .bdiss{
+      color: black;
+      text-decoration: line-through;
+  }
+  .adiss{
+      color: goldenrod;
+  }
+  img:hover {
+    animation: shake 5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  @media only screen and (max-width: 620px) {
+    
+    .gallery,.gallery2,.gallery3{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .sticky{
+      font-size: 14px;
+      margin-top: -35px;
+    }
+}
+@media only screen and (max-width: 372px) {
+    
+  .gallery,.gallery2,.gallery3{
+      width: 90%;
+      margin: auto;
+      margin-bottom: 10px;
+  }
+  .sticky{
+    font-size: 12px;
+    
+  }
+}
+@media only screen and (max-width: 372px) {
+    
+  .gallery,.gallery2,.gallery3{
+      width: 90%;
+      margin: auto;
+      margin-bottom: 10px;
+  }
+  
+}

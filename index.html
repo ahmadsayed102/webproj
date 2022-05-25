@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+    <header>
+           <nav>
+               <ul>
+                   <li>Home page</li>
+               </ul>
+            <ul>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="signup.html">Sign up</a></li>  
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="men">
+            <a href="men.html">
+          <img src="men.jpg" alt="" >
+        </a>
+        </div>
+        <div class="women">
+        <a href="women.html">
+          <img src="women.jpg" alt="" >
+        </a>
+        </div>
+    </div>
+    <div class="main2">
+      <div class="kids">
+          <a href="kids.html">
+        <img src="kids.jpg" alt="" >
+      </a>
+      </div> 
+  </div><br>
+      <div class="text">
+        <h2>Size guide : </h2><br>
+        <table class="sizes" border="0" cellpadding="10" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <td>Mens</td>
+                <td>Small</td>
+                <td>Medium</td>
+                <td>Large</td>
+                <td>X-Large</td>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>Neck</td>
+            <td>14-14.5</td>
+            <td>15-15.5</td>
+            <td>16-16.5</td>
+            <td>17-17.5</td>
+            </tr>
+            <tr>
+            <td>Chest</td>
+            <td>35-37</td>
+            <td>38-40</td>
+            <td>41-43</td>
+            <td>44-46</td>
+            </tr>
+            <tr>
+            <td>Sleeve</td>
+            <td>32-33</td>
+            <td>33-34</td>
+            <td>34-35</td>
+            <td>35-36</td>
+            </tr>
+            <tr>
+            <td>Waist</td>
+            <td>29-31</td>
+            <td>32-34</td>
+            <td>35-37</td>
+            <td>38-40</td>
+            </tr>
+            </tbody>
+            </table>
+            <div class="tips">
+                <h2>Tips to measure : </h2>
+            <p><strong>Neck:</strong> Measure around the middle of your neck (at the Adam’s apple), keeping the tape a bit loose.</p>
+            <p>
+            <strong>Chest:</strong> Measure under your arms around the fullest part of your chest.
+            </p>
+            <p>
+            <strong>Sleeve length:</strong> Bend your elbow 90 degrees and place your hand on your hip. Hold the tape at the center of the back of your neck. Measure across your shoulder to your elbow and down to your wrist. The total length is your sleeve length.</p>
+            <p>
+            <strong>Waist:</strong> Measure around your natural waistline, keeping the tape a bit loose.</p>
+        </div>
+<h2 class="a">Examples of our products : </h2>
+        <div class="content">
+          <div class="images">
+            <img src="men/1.jpg" class="img">
+            <img src="women/1.jpg" class="img">
+            <img src="men/t2.jpg" class="img">
+            <img src="women/t2.jpg" class="img">
+            <img src="men/s2.jpg" class="img">
+            <img src="women/s6.jpg" class="img">
+          </div>
+    </div><br>
+    <h2>Why choose us ?</h2>
+    <p>If you're looking for branded and promotional clothing, it's worth choosing your supplier with care. With Our Brand you'll enjoy the best possible products, quality, service and support – guaranteed! <br> We're proud to develop enduring supplier relationships that keep quality high and prices keen. We’ll never cut corners: instead, we’ll take the extra steps that keep our customers happy, time after time.</p>
+        <h2 id="about">About us : </h2>
+        <p class="anytext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae diam in ante pharetra cursus. Nam euismod leo nec turpis vehicula ornare. Curabitur suscipit ultricies libero. Aliquam id diam erat. Ut fermentum tempus risus ut dictum. Praesent a leo at nisi varius commodo. Ut erat magna, iaculis ut massa vehicula, posuere dictum orci. Fusce lacinia lectus sit amet velit fringilla, ut convallis lectus pulvinar.
+
+          Morbi ac arcu lacinia, dapibus libero a, dignissim risus. In hac habitasse platea dictumst. Proin placerat justo in viverra pharetra. Proin tempus augue metus, in feugiat mi pulvinar in. Nunc pellentesque vulputate sagittis. Donec euismod leo non pulvinar ullamcorper. Curabitur ornare augue vel velit hendrerit, vitae elementum metus ornare. Phasellus ac ex dui. Suspendisse sed tellus in nisi congue tempus sed et nisl. Curabitur non urna eu arcu blandit efficitur. Curabitur varius libero enim, ut sagittis neque faucibus eget.</p>
+      </div>
+      <script>
+        var indexValue = 0;
+        function s_show(){
+          setTimeout(s_show, 2000);
+          var x;
+          var img = document.getElementsByClassName("img");
+          for(x = 0; x < img.length; x++){
+            img[x].style.display = "none";
+          }
+          indexValue++;
+          if(indexValue > img.length){indexValue = 1}
+          img[indexValue -1].style.display = "block";
+        }
+        s_show();
+        
+      </script>
+</body>
+</html>

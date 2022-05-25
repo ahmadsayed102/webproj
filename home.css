@@ -1,0 +1,144 @@
+html,body{
+   min-height:  100%;
+}
+html, body {
+    overflow: auto;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #42378f;
+    background-image: linear-gradient(315deg, #42378f 0%, #cf3f49 74%);
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    margin: 0px;
+  }
+  .main2{
+    display: flex;
+    width: 50%;
+    height: 80%;
+    justify-content: space-around;
+    margin: auto;
+  }
+  .men,.women {
+    flex: 50%;
+    height: 100%;
+  }
+  img{
+      width: 100%;
+      height: 100%;
+  }
+  
+  h2{
+      padding: 1%;
+      margin-top: 1%;
+      
+  }
+  .a{
+    margin-bottom: 1%;
+  }
+  .content{
+ 
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+  }
+  .content .images{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+  .images img{
+    height: 100%;
+    width: 100%;
+  }
+  .sizes{
+    color: white;
+    font-weight: 500;
+    
+  }
+  .sizes thead{
+    background: black;
+    color: goldenrod;
+    font-size: 22px;
+  }
+  .sizes tr:nth-child(even){
+    background: black; 
+  }
+  
+  .sizes tbody tr td:first-child{
+    font-size: 14px;
+  }
+  td{
+      padding: 15px;
+  }
+  .text{
+      height: 100%;
+  }
+  p{
+      font-size: 22px;
+      padding-left: 10px;
+      margin: 10px;
+      padding-bottom: 10px;
+  }
+  .tips{
+      width: 90%;
+      border: 2px solid goldenrod;
+      margin: auto;
+      border-radius: 7px;
+  }
+
+
+
+
+  img:hover {
+    animation: shake 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  @media only screen and (max-width: 620px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        height: 20%;
+        
+    }
+    td{
+        padding: 5px;
+    }
+    .sizes tbody tr td:first-child{
+        font-size: 18px;
+      }
+    p{
+        font-size: 16px;
+        padding-left: 5px;
+        margin: 5px;
+    }
+    .sizes thead{
+        font-size: 18px;
+      }
+      .content{
+        width: 100%;
+      }
+
+}

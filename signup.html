@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+    <header>
+           <nav>
+               <ul>
+                   <li>Sign up page</li>
+               </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+    <div class="container">
+        <div class="title"><span id="title"> Signup Form</span></div>
+        <div class="content">
+          <form  id="form" action="index.html"  method="get" enctype="text/plain">
+            <div class="container2">
+              <div class="in">
+                <span class="info">First name</span>
+                <input type="text" placeholder="Enter your first name" id="first_name" required name="firstname">
+              </div>
+              <div class="in">
+                <span class="info">Last name</span>
+                <input type="text" placeholder="Enter your last name" id="last_name" required name="lastname">
+              </div>
+              <div class="in">
+                <span class="info">Email</span>
+                <input type="text" placeholder="Enter your email" id="email" required name="email">
+              </div>
+              <div class="in">
+                <span class="info">Phone Number</span>
+                <input type="text" placeholder="Enter your number" id="mobile" required name="phonenumber">
+              </div>
+              <div class="in">
+                <span class="info">Password</span>
+                <input type="text" placeholder="Enter your password" id="password" required name="password">
+              </div>
+            <div class="title2">
+              <label for="male" >Male</label>
+                <input type="radio" name="gender" id="male" value="male" required>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+              <div class="adjust">
+            <div class="button">
+              <input type="submit" value="Register" onclick="signup()" id="submit">
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+      </div>
+      <script src="signup.js"></script>
+</body>
+</html>
